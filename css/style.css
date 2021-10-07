@@ -971,11 +971,11 @@ h2 {
 .logo {
   margin-left: 25px;
   position: relative;
-  top: 0%;
-  left: 0px;
-  /* width: 100px; */
+  top: 10px;
+  left: 10px;
+  width: 100%;
   margin-right: 0px;
-  height: 40px;
+  height: 60px;
 }
 
 .logo:hover {
