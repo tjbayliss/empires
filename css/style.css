@@ -1,0 +1,1847 @@
+/*
+    ####################################################
+    M E D I A  Q U E R I E S
+    ####################################################
+    */
+
+/*
+    ::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Bootstrap 4 breakpoints
+
+    // Extra small devices (portrait phones, less than 576px)
+    // No media query since this is the default in Bootstrap
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+
+    */
+
+/* 
+    Extra small devices (portrait phones, less than 576px) 
+    No media query since this is the default in Bootstrap because it is "mobile first"
+    */
+
+body {
+  background-color: #211f20 !important;
+  font-family: "Open Sans", serif;
+}
+
+/* very small devices  */
+@media (max-width: 575px) {
+  .tick text {
+    fill: #fff;
+    font-size: 0.5rem;
+  }
+  .col-md-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .external-embed-mini {
+    display: inline;
+  }
+
+  .external-embed {
+    display: none;
+  }
+
+  .scroll {
+    transform: translateX(-50%);
+  }
+
+  .Main-Container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .publish {
+    font-size: 0.5rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .btn-group {
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .btn {
+    font-size: 0.35rem;
+    width: 13.5%;
+  }
+
+  .divVisualBaseStatic {
+    width: 85%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    fill-opacity: 0.25;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 0px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+  }
+
+  .chapterTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .chapter {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+  }
+
+  .chapterNumber {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  .buttonsRow {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .controls {
+    width: 145px;
+    height: 275px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -290px;
+    top: 175px;
+    z-index: 400;
+  }
+
+  .controlsSVG {
+    width: 35px;
+    height: 260px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .legend {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -265px;
+    top: 425px;
+    z-index: 400;
+  }
+  .storyControls {
+    width: 125px;
+    height: 60px;
+    background-color: rgba(147, 163, 177, 1);
+    border-radius: 0px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    opacity: 0.5;
+    z-index: 250;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .tick text {
+    fill: #fff;
+    font-size: 0.66rem;
+  }
+  .external-embed-mini {
+    display: none;
+  }
+
+  .external-embed {
+    display: inline;
+  }
+
+  .scroll {
+    transform: translateX(-50%);
+  }
+
+  .publish {
+    font-size: 0.5rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    font-size: 0.45rem;
+    width: 13.5%;
+  }
+
+  .btn-group {
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .divVisualBaseStatic {
+    width: 100%;
+    height: 100%;
+
+    background-color: #000000;
+    fill-opacity: 0.25;
+    margin-left: 75px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 125px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+  }
+
+  .chapterTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .chapter {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+  }
+
+  .chapterNumber {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  .controls {
+    width: 145px;
+    height: 280px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -290px;
+    top: 200px;
+    z-index: 400;
+  }
+
+  .controlsSVG {
+    width: 35px;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .legend {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -265px;
+    top: 425px;
+    z-index: 400;
+  }
+  .storyControls {
+    width: 125px;
+    height: 60px;
+    background-color: rgba(147, 163, 177, 1);
+    border-radius: 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0.5;
+    z-index: 250;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .tick text {
+    fill: #fff;
+    font-size: 0.66rem;
+  }
+  .external-embed-mini {
+    display: none;
+  }
+
+  .external-embed {
+    display: inline;
+  }
+
+  .scroll {
+    transform: translateX(-50%);
+  }
+
+  .publish {
+    font-size: 0.66rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .btn-group {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .btn {
+    font-size: 0.5rem;
+    width: 13.5%;
+  }
+
+  .divVisualBaseStatic {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    fill-opacity: 0.25;
+    margin-left: 75px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 125px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+  }
+
+  .chapterTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .chapter {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+  }
+
+  .chapterNumber {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  .controls {
+    width: 145px;
+    height: 310px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -290px;
+    top: 200px;
+    z-index: 400;
+  }
+  .controlsSVG {
+    width: 35px;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .legend {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -265px;
+    top: 550px;
+    z-index: 400;
+  }
+  .storyControls {
+    width: 125px;
+    height: 60px;
+    background-color: rgba(147, 163, 177, 1);
+    border-radius: 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0.5;
+    z-index: 250;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .tick text {
+    fill: #fff;
+    font-size: 0.75rem;
+  }
+  .external-embed-mini {
+    display: none;
+  }
+
+  .external-embed {
+    display: inline;
+  }
+
+  .scroll {
+    transform: translateX(-50%);
+  }
+
+  .publish {
+    font-size: 0.66rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .btn-group {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .btn {
+    font-size: 0.66rem;
+    width: 13.5%;
+  }
+
+  .divVisualBaseStatic {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    fill-opacity: 0.25;
+    margin-left: 75px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 125px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+  }
+
+  .chapterTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .chapter {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+  }
+
+  .chapterNumber {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+  }
+
+  .legend {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -265px;
+    top: 550px;
+    z-index: 400;
+  }
+
+  .controls {
+    width: 145px;
+    height: 310px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -290px;
+    top: 200px;
+    z-index: 500;
+  }
+  .controlsSVG {
+    width: 35px;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .col-md-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .storyControls {
+    width: 125px;
+    height: 60px;
+    background-color: rgba(147, 163, 177, 1);
+    border-radius: 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0.5;
+    z-index: 250;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .tick text {
+    fill: #fff;
+    font-size: 0.75rem;
+  }
+
+  .external-embed-mini {
+    display: none;
+  }
+
+  .external-embed {
+    display: inline;
+  }
+
+  .scroll {
+    transform: translateX(-50%);
+  }
+
+  .publish {
+    font-size: 0.66rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .btn-group {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .btn {
+    font-size: 0.66rem;
+    width: 14%;
+  }
+
+  .divVisualBaseStatic {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    fill-opacity: 0.25;
+    margin-left: 75px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 125px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+  }
+
+  .chapterTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .chapter {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #ffffff;
+  }
+
+  .chapterNumber {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    color: #ffffff;
+    position: absolute;
+    right: 50px;
+    /*   bottom: -20px; */
+    top: 50px;
+    /*   float: right; */
+  }
+
+  .controls {
+    width: 145px;
+    height: 310px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -290px;
+    top: 200px;
+    z-index: 400;
+  }
+  .controlsSVG {
+    width: 35px;
+    height: 315px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .legend {
+    width: 300px;
+    height: 200px;
+    background-color: rgba(147, 167, 177, 1);
+    border-radius: 5px;
+    position: fixed;
+    left: -265px;
+    top: 550px;
+    z-index: 400;
+  }
+
+  .col-md-12 {
+    padding-right: 15px;
+    padding-left: 0px;
+  }
+
+  .storyControls {
+    width: 125px;
+    height: 60px;
+    background-color: rgba(147, 163, 177, 1);
+    border-radius: 0px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0.5;
+    z-index: 250;
+  }
+} /* */
+
+/* GLOBAL CSS */
+
+.handle {
+  fill: #93a3b1;
+  stroke: #93a3b1;
+  stroke-width: 1;
+}
+
+.buttonsRow {
+  margin-top: 15px;
+  margin-bottom: 15px; /* 
+            margin-left: 0px;
+            margin-right: 30px; */
+}
+
+.visual {
+  width: 100%;
+  height: 3500px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: /* #000 */ #211f20 !important;
+  top: 3px;
+  left: 0px;
+  /*  position: relative; */
+  position: absolute;
+  display: inline-block;
+}
+
+.visualStatic {
+  width: 100%;
+  height: /* 275px */ 400px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #211f20 !important;
+  display: inline-block;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+
+.svgVisualBase {
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  background-color:/* rgba(0,0,0, 1.00 )*/ #211f20 !important;
+}
+
+.svgVisualBaseStatic {
+  /* width: 1080px; */
+  /*   height: 100%; */
+  width: 100%;
+  height: 350px;
+  padding-top: 0px;
+  background-color: #211f20 !important;
+  /*   background-color: cyan !important; */
+  position: fixed;
+  z-index: 100;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: #fff /*  #000000 */ /* #211f20 !important */;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/*     .row {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+        background-color:#000000;
+    } */
+
+/*     .title-div{
+        text-align:center;
+    } */
+
+.mask {
+  fill: #93a3b1;
+}
+
+h2 {
+  color: #93a3b1;
+}
+/* 
+    .top-title{
+        margin-top:70px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:0px;
+        font-weight:bold;
+        text-align: center !important;
+        background-color:#211f20 !important;
+    } */
+.top-title {
+  /*   margin-top: 70px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  font-weight: bold;
+  text-align: center !important;
+  /*  background-color: #FFF; */
+  position: fixed;
+  left: 50%;
+  top: 2%;
+  z-index: 1000;
+  color: #fff;
+}
+
+.buttonContainerRow {
+  z-index: 100;
+  position: fixed;
+  top: 78px;
+  width: 100%;
+  /*         margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px; */
+}
+
+.svgContainerRow {
+  z-index: 100;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+}
+
+.headerRow {
+  position: fixed;
+  top: -15px;
+  z-index: 100;
+  margin-bottom: 0px;
+}
+
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  justify-content: center !important;
+}
+
+.map {
+  background-color: blue;
+  width: 100%;
+}
+
+/*   .section, */
+.fullpage-wrapper {
+  overflow-x: hidden;
+}
+
+.up {
+  display: inline;
+}
+
+.middle {
+  display: inline;
+}
+
+.down {
+  display: inline;
+}
+
+.stopped {
+  display: inline;
+}
+
+.moving {
+  display: none;
+}
+
+.twitter-share-button {
+  float: right;
+  margin: 5px;
+  margin-right: 9px;
+  width: 76px !important;
+  height: 28px !important;
+}
+
+.twitter-follow-button {
+  float: right;
+  margin: 5px;
+  margin-right: 17px;
+}
+
+.external-embed-mini {
+  position: fixed;
+  top: -60px;
+  right: 0px;
+  width: 55px;
+  height: 120px;
+  background-color: #211f20 !important;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 0px;
+  border-style: solid;
+  z-index: 150;
+}
+
+.external-embed {
+  position: fixed;
+  top: -60px;
+  right: 0px;
+  width: 198px;
+  height: 120px;
+  background-color: #211f20 !important;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-width: 0px;
+  border-style: solid;
+  z-index: 150;
+}
+
+.header {
+  height: 60px;
+  position: fixed;
+  background-color: #211f20 !important;
+  width: 100%;
+  z-index: 200;
+  top: 0px;
+}
+
+.footer {
+  height: 75px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #211f20 !important;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  display: none;
+}
+
+.footer-label {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 0.66rem;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.dates {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+}
+
+.publish-label {
+  top: 0px;
+  display: inline-grid;
+  margin-left: 0px;
+  margin-right: 50px;
+  font-weight: lighter;
+  color: #a0a0a0;
+  margin-top: 20px;
+  position: relative;
+  left: 0px;
+  font-family: inherit;
+}
+
+.update-label {
+  top: 0px;
+  display: inline-grid;
+  margin-left: 50px;
+  margin-right: 0px;
+  font-weight: lighter;
+  color: #a0a0a0;
+  margin-top: 20px;
+  position: relative;
+  right: 0px;
+  font-family: inherit;
+}
+
+.action {
+  font-weight: 800;
+}
+
+.scroll {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 8.5%;
+  width: 40px;
+  height: 40px;
+}
+
+.scroll-semi-up {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 9.5%;
+  width: 40px;
+  height: 20px;
+}
+
+.scroll-semi-down {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 7.5%;
+  width: 40px;
+  height: 20px;
+}
+
+.logo {
+  margin-left: 25px;
+  position: relative;
+  top: 0%;
+  left: 0px;
+  /* width: 100px; */
+  margin-right: 0px;
+  height: 40px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.twitter-button {
+  margin: 10px;
+}
+
+.contact {
+  transform: scale(0.175);
+  position: absolute;
+  right: -60px;
+  top: -25px;
+}
+
+.website {
+  transform: scale(0.115);
+  position: absolute;
+  right: -22px;
+  top: -59px;
+}
+
+.linkedIn {
+  transform: scale(0.1);
+  position: absolute;
+  right: -10px;
+  top: -82px;
+}
+
+#pinterestLogo {
+  transform: scale(0.1265);
+  position: absolute;
+  left: -86px;
+  top: -14px;
+}
+
+#twitterLogo {
+  transform: scale(0.0385);
+  position: absolute;
+  left: -340px;
+  top: -344px;
+}
+
+#linkedInLogo {
+  transform: scale(0.054);
+  position: absolute;
+  left: -233px;
+  top: -200px;
+}
+
+.twitter:hover {
+  cursor: pointer;
+}
+
+.share {
+  position: absolute;
+  transform: scale(1.5);
+  right: 50px;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.share:hover {
+  cursor: pointer;
+}
+
+.share-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px 2px 8px;
+  margin: 10px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.share-button:hover {
+  color: #fff;
+  background-color: #4f4f4f;
+}
+
+.share-button:active {
+  top: 1px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.share-button svg {
+  fill: #ffffff;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+}
+
+.share-button.linkedin {
+  background-color: #0077b5;
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  width: 179px;
+}
+
+.share-button.linkedin:hover {
+  background-color: #1e84b9;
+}
+
+.share-button.twitter {
+  background-color: #1b95e0;
+}
+
+.share-button.twitter:hover {
+  background-color: #269ce5;
+}
+
+.share-button.pinterest {
+  background-color: #c92228;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  width: 179px;
+}
+
+.share-button.pinterest:hover {
+  background-color: #cf4146;
+}
+
+.btn-o {
+  width: 100%;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+h1 {
+  font-size: 5em;
+  font-family: arial, helvetica;
+  color: #000;
+  margin: 0;
+  width: 100%;
+}
+
+.intro p {
+  color: #000;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section {
+  text-align: center;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+  left: 50px;
+}
+
+.controlArrow.next {
+  right: 50px;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #000;
+}
+
+#fp-nav ul li a.active span {
+  background-color: #009ed2;
+}
+
+.intro {
+  height: inherit;
+}
+
+.redBox {
+  fill: none;
+  stroke: 0.1;
+  stroke: rgb(222, 239, 253);
+  stroke-opacity: 0.25;
+}
+
+.overlay {
+  fill: rgba(200, 200, 200, 0);
+}
+
+.selection {
+  fill: rgba(200, 200, 200, 1);
+  stroke: rgba(200, 200, 200, 1);
+  stroke-width: 1px;
+  fill-opacity: 0.25;
+}
+
+.cross-G {
+  display: none;
+}
+
+.cross-G rect {
+  fill: #a0a0a0;
+  fill-opacity: 0.25;
+}
+
+.country {
+  fill: #ccc;
+  stroke-width: 0.4;
+  stroke: #fff;
+}
+
+.country:hover {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+.text {
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.container {
+  max-width: 1750px;
+}
+#container {
+  /* margin:10px 10%; */
+  border: 0px solid #000;
+  border-radius: 5px;
+  height: 100%;
+  overflow: hidden;
+  background: none;
+}
+.hidden {
+  display: none;
+}
+div.tooltip {
+  color: #222;
+  background: #fff;
+  padding: 0.5em;
+  text-shadow: #f5f5f5 0 1px 0;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px 0px #a6a6a6;
+  opacity: 0.9;
+  position: absolute;
+}
+.graticule {
+  fill: none;
+  stroke: #bbb;
+  stroke-width: 0.5px;
+  stroke-opacity: 0.5;
+}
+.equator {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+.land {
+  fill: rgb(117, 87, 57);
+  stroke-opacity: 1;
+}
+
+.countries path {
+  stroke: rgb(80, 64, 39);
+  stroke-linejoin: round;
+  stroke-width: 0.5;
+  fill: rgb(117, 87, 57);
+  opacity: 0.1;
+}
+
+.countries path:hover {
+  fill-opacity: 0.1;
+  stroke-width: 1;
+  opacity: 1;
+}
+
+.graticule {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5;
+  opacity: 0.2;
+}
+
+.labels {
+  font: 8px sans-serif;
+  fill: black;
+  opacity: 0.5;
+}
+
+.noclicks {
+  pointer-events: none;
+}
+
+.point {
+  opacity: 0.6;
+}
+
+/* .fullWidthBlack #rights span { */
+.footer span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 30px;
+}
+
+/*     .bar rect {
+        fill: #4682b4;
+    } */
+.base {
+  fill: #4682b4;
+}
+
+.bar text {
+  fill: #ffffff;
+  text-anchor: end;
+  font-size: 0.65rem;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #ffffff;
+  shape-rendering: crispEdges;
+  stroke-width: 0.5;
+}
+
+.sort:hover {
+  cursor: pointer;
+}
+
+.colour {
+  cursor: pointer;
+}
+
+.y.axis path,
+.x.axis path {
+  display: none;
+}
+
+.yMini.axis {
+  display: inline;
+  opacity: 0;
+}
+
+.tick text:hover {
+  cursor: pointer;
+}
+
+.sort {
+  /* font-size:1.0rem; */
+  font-weight: normal;
+  fill: #a0a0a0;
+  stroke: none;
+  opacity: 0.75;
+}
+
+.colour {
+  /* font-size:1.0rem; */
+  font-weight: normal;
+  fill: #ffffff;
+  stroke: none;
+  opacity: 1;
+}
+
+.selected {
+  font-weight: bold;
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.selectedSortOrder {
+  font-weight: bold;
+  fill: #ffffff;
+  opacity: 1;
+}
+
+.legendHeightMarker,
+.dateMarker {
+  stroke-width: 1.5;
+  stroke: #000000;
+  pointer-events: none;
+}
+
+/* 
+    .filled {
+        fill: url(#mainGradient);
+    } */
+
+.axisLabel {
+  font-size: 1rem;
+  font-weight: bold;
+  fill: #fff;
+  stroke: none;
+}
+
+.yAxisLabels {
+  fill: #fff;
+  font-size: 0.75rem;
+  display: none;
+}
+
+.bar {
+  fill: orange;
+}
+
+.sortBy {
+  color: #ffffff;
+}
+
+.controlsLabels {
+  font-size: 0.75rem;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.sortButtons-G {
+  position: relative;
+  left: 50px;
+  top: 0px;
+  float: left;
+}
+
+.continentButtons-G {
+  position: relative;
+  right: 50px;
+  top: 0px;
+  float: right;
+}
+
+.artButtons-G {
+  position: relative;
+  left: 30%;
+  top: 0px;
+}
+
+.empirePolygon {
+  fill-opacity: 0.75;
+  stroke-opacity: 1;
+}
+
+.empirePolygon:hover {
+  cursor: pointer;
+  /*  pointer-events:all; */
+}
+
+.tooltipGrect {
+  fill: #93a3b1;
+  pointer-events: none;
+}
+
+.tooltipDIV.visible {
+  display: inline;
+}
+
+.outline {
+  fill-opacity: 0;
+  stroke-width: 1.5;
+  stroke: #fff;
+  stroke-opacity: 1;
+}
+
+.fill {
+  stroke-opacity: 1;
+  stroke: #fff;
+}
+
+.yAxisTicks {
+  display: inline;
+  opacity: 0.15;
+}
+
+.checked {
+  display: inline;
+  opacity: 1;
+  fill: #ffffff;
+  /* stroke:#FFFFFF; */
+}
+
+.yAxisTicks.hide {
+  display: none;
+  opacity: 0;
+}
+
+.zeroLine {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 2.5;
+  pointer-events: none;
+}
+
+.legendHelpLabel {
+  font-weight: lighter;
+  fill: #fff;
+  text-anchor: end;
+}
+
+.cross:hover {
+  cursor: pointer;
+}
+
+.legendSVG {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.legend {
+  display: none;
+}
+
+.legend:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.legend.closeLegend {
+  left: 0px;
+}
+
+.legend.openLegend {
+  left: -265px;
+}
+
+.controls:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.controls.closeControls {
+  left: 0px;
+}
+
+.controls.openControls {
+  left: -110px;
+}
+
+.control {
+  position: relative;
+  left: 5px;
+  display: inline-block;
+  padding: 5px;
+  margin: 3px;
+  width: 100px;
+  top: 5px;
+}
+
+.storyControls:hover {
+  cursor: pointer;
+}
+
+.storyControls-G {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  top: 10%;
+  position: relative;
+}
+
+.highlighted {
+  opacity: 1;
+  stroke-width: 4px;
+  stroke: #885053;
+}
+
+.controlButton {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.25;
+}
+.controlButton.replay {
+  visibility: hidden;
+}
+.controlButton.stepBack {
+  visibility: hidden;
+}
+
+.controlButton.stepForward {
+  visibility: hidden;
+}
+.controlButton.closeStory {
+  visibility: hidden;
+}
+
+.controlButton:hover {
+  cursor: pointer;
+  opacity: 1;
+  filter: url(#f1);
+}
+
+.controlButton:active {
+  cursor: pointer;
+  opacity: 1;
+  filter: url(#f1);
+}
+
+.tooltipText.title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  fill: #ffffff;
+}
+
+.tooltipText.subtitle,
+.tooltipText.information,
+.storyPage.information {
+  font-size: 0.75rem;
+  font-weight: normal;
+  fill: #ffffff;
+}
+
+/* GRAPH TYPE DIV */
+
+.graphType {
+  width: 100px;
+  height: 145px;
+  background-color: rgba(147, 163, 177, 0.95);
+  border-radius: 0px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  opacity: 0.33;
+  z-index: 250;
+  display: none;
+}
+
+.graphType:hover {
+  cursor: pointer;
+}
+
+.graphTypeRadios-G {
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+  margin: 0px 0px 0px 0px;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+  color: #fff /* #885053 */;
+  font-size: 0.75rem;
+}
+
+/* LINE TYPE DIV */
+
+.lineType {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(200, 200, 200, 0.95);
+  border-radius: 5px;
+  position: fixed;
+  right: 50px;
+  bottom: 200px;
+  opacity: 0.33;
+}
+
+.lineType:hover {
+  cursor: pointer;
+}
+
+.lineTypeRadios-G {
+  position: relative;
+  left: 0px;
+  top: -21px;
+}
+
+.form-check2 {
+  position: relative;
+  display: block;
+  padding-left: 2.25rem;
+  margin: 0px 10px 10px 0px;
+}
+
+.axisType {
+  width: 100px;
+  height: 75px;
+  background-color: rgba(147, 163, 177, 0.95);
+  border-radius: 0px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  opacity: 0.33;
+  z-index: 250;
+  display: none;
+}
+
+.axisType:hover {
+  cursor: pointer;
+}
+
+.axisTypeRadios-G {
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+  margin: 0px 0px 0px 0px;
+}
+
+.form-check-label {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+.graphType.visible,
+.lineType.visible,
+.axisType.visible,
+.storyControls.visible {
+  opacity: 1;
+}
+
+#legendCurve {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+hr {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#slider {
+  height: 10px;
+}
+
+.controlsTitle {
+  text-anchor: end;
+}
+
+.btn.filter {
+  opacity: 0;
+}
+
+/* BOOTSTRAP4 - SPECIFIC */
+
+.fullWidthBlack #rights span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.navbar {
+  background-color: #211f20 !important;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: #fff !important;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: 300;
+}
+
+ul li {
+  float: left;
+  margin-left: 20px;
+  margin-top: 0px;
+  padding: 10px 20px;
+}
+
+.navigation-top {
+  width: 700px;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .btn-group {
+  z-index: 1000;
+  top: 75px;
+  left: 0px;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  z-index: 1000;
+} */
+.btn-group {
+  z-index: 1000;
+  top: 75px;
+  left: 0px;
+  max-width: 98%;
+  position: fixed;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.btn-group.special {
+  display: flex;
+  padding: 20px 20px;
+}
+
+.special .btn {
+  flex: 1;
+}
+
+.hideShow {
+  font-size: 1rem;
+  fill: #ffffff;
+  font-weight: bold;
+  text-anchor: end;
+}
+
+.hideShow:hover {
+  cursor: pointer;
+}
+
+/* #showAll2 {
+  width: 70px;
+  height: 25px;
+  position: fixed;
+  top: 130px;
+  z-index: 1000;
+  background-color: #94c9a9;
+  border-color: #94c9a9;
+  font-size: 0.5rem;
+} */
+/* 
+#hideShowBtn {
+  width: 70px;
+  height: 25px;
+  position: fixed;
+  top: 130px;
+  z-index: 1000;
+  background-color: #94c9a9;
+  border-color: #94c9a9;
+  font-size: 0.5rem;
+} */
+
+#showAll {
+  margin-left: 2px;
+}

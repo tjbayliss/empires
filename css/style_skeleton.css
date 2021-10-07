@@ -1,0 +1,153 @@
+ 
+
+    /* very small devices  */
+    @media (max-width: 575px) {  
+        p{
+            margin:0px 0px 25px 0px; /* TOP RIGHT BOTTOM LEFT */
+            font-size:0.75rem;
+        }          
+    }
+    
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) {  
+        p{
+            margin:0px 0px 25px 0px; /* TOP RIGHT BOTTOM LEFT */
+            font-size:0.75rem;
+        }  
+    }
+    
+    /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+    @media (min-width: 768px) {  
+        p{
+            margin:0px 0px 25px 0px; /* TOP RIGHT BOTTOM LEFT */
+            font-size:0.75rem;
+        }
+    }
+    
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {  
+        p{
+            margin:0px 0px 25px 0px; /* TOP RIGHT BOTTOM LEFT */
+            font-size:1.0rem;
+        } 
+    }
+    
+    /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {  
+        p{
+            margin:0px 0px 25px 0px; /* TOP RIGHT BOTTOM LEFT */
+            font-size:1.0rem;
+        }
+    }/* */
+
+
+
+
+
+
+
+
+    /* GLOBAL CSS */
+
+    body{
+        background-color:#FFFFFF;
+        font-family: 'Open Sans',serif;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .logo {
+        margin-left: 25px;
+        position: relative;
+        top: 0%;
+        left: 0px;
+        width: 100px;
+        height:40px;
+        margin-right: /* 25px */ 0px;
+        /* transform:scale(1.0); */
+    }
+
+    /* #footer */ a {
+      text-decoration: none;
+      color: #fff;
+    } 
+    
+    .fullWidthBlack #rights span {
+        color: #fff;
+        text-align: center;
+        display: block;
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 30px;
+    }
+
+    .navbar-brand{
+        font-weight:normal;
+        font-size:1.0rem;
+    }
+
+
+    .nav-link{
+        font-size: 14px;
+        color: #FFF !important;
+      /*  color: #000 !important; */
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        text-decoration: none;
+
+        margin: 0;
+        padding: 0;
+        border: 0;
+      /*   font-size: 100%; */
+       /*  font: inherit; */
+      /*   font-size: inherit; */
+        vertical-align: baseline;
+        font-weight:300;
+    }
+
+  /*   .navigation-top  */ul li {
+        float: left;
+        margin-left: 20px;
+        margin-top: 0px;
+        padding: 10px 20px;
+    }
+    
+    .navigation-top {
+        width: 700px;
+        float: right;
+    }
+    
+    .visual {
+        width: 100%;
+       /*  height: 3500px; */
+       height: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: #F00;
+      /*   left: -5px; */
+        left: 0px;
+       /*  position: relative; */
+       position: absolute;
+        display: inline-block;
+    }
+
+    .svgVisualBase{
+        background-color: #00F;
+    }
+
+    h1{
+        font-weight:bold;
+    }

@@ -1,0 +1,183 @@
+<!doctype html>
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Empires</title>
+
+  <!--  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sticky-footer-navbar/"> -->
+  <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+
+  <link rel="icon" href="https://alephinsights.com/wp-content/uploads/2019/05/favicon.ico" sizes="32x32">
+  <link rel="icon" href="https://alephinsights.com/wp-content/uploads/2019/05/favicon.ico" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://alephinsights.com/wp-content/uploads/2019/05/favicon.ico">
+
+</head>
+
+<body class="d-flex flex-column h-100" onload="onload()">
+  <header>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <a class="nav-link" href="https://ableview.co.uk/"><img class="logo" src="image/ableview.svg"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="https://alephinsights.com/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Podcasts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Visualisations</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0">
+    <div class="container">
+
+      <!--   
+        <div class="row justify-content-center svgContainerRow">
+
+        <div class="col-lg-12 col-md-12">
+          <div class="visualStatic" id="visualStatic"></div>
+        </div>
+      </div>
+ -->
+
+      <!--       <div class="headerRow row justify-content-center">
+        <div class="col-lg-12 col-md-12 special">
+        </div>
+      </div> -->
+
+      <div class="mainColumn row justify-content-center">
+
+        <div class="col-lg-12 col-md-12">
+
+          <div class="visual" id="visual">
+
+            <div role="group" class="btn-group special">
+              <button type="button" value="Africa" id="Africa" class="btn btn-light filter Africa">Africa</button>
+              <button type="button" value="Asia" id="Asia" class="btn btn-light filter Asia">Asia</button>
+              <button type="button" value="Central America" id="Central-America"
+                class="btn btn-light filter Central America">Central America</button>
+              <button type="button" value="Europe" id="Europe" class="btn btn-light filter Europe">Europe</button>
+              <button type="button" value="Middle East" id="Middle-East" class="btn btn-light filter Middle East">Middle
+                East</button>
+              <button type="button" value="North America" id="North-America"
+                class="btn btn-light filter North-America">North America</button>
+              <button type="button" value="South America" id="South-America"
+                class="btn btn-light filter South-America">South America</button>
+              <!-- -->
+              <!--  <button type="button" value="North America" id="North-America" class="btn btn-light filter North-America">North America</button>
+              <button type="button" value="South America" id="South-America" class="btn btn-light filter South-America">South America</button> -->
+
+              <button type="button" value="showAll" id="showAll" class="btn btn-secondary" onclick="showAll(this)">Show
+                All</button>
+              <button type="button" value="hideShow" id="hideShowBtn" class="btn btn-secondary">Hide Map</button>
+            </div>
+
+          </div>
+
+          <div class="legend openLegend hidden">
+            <svg class="legendSVG"></svg>
+          </div>
+
+          <div class="controls openControls hidden">
+            <label class="controlsLabels">Sort By:</label>
+            <button type="button" id="Empire"
+              class="control btn btn-primary sort Empire selectedSortOrder">Empire</button>
+            <button type="button" id="Length" class="control btn btn-secondary sort Length">Length</button>
+            <button type="button" id="Start" class="control btn btn-secondary sort Start">Start</button>
+            <button type="button" id="ContinentStart"
+              class="control btn btn-secondary sort ContinentStart">Continent+Start</button>
+
+            <label class="controlsLabels">Display By:</label>
+            <button type="button" id="outline_fill" class="control btn btn-secondary fill"
+              onclick="outline_fill(this)">Outline</button>
+            <button type="button" id="peaks" class="control btn btn-secondary peaks"
+              onclick="peaks(this)">Peaks</button>
+            <!-- 
+            <button type="button" id="showAll" class="control btn btn-secondary showAll" onclick="showAll(this)">Show All</button> -->
+            <svg class="controlsSVG"></svg>
+          </div>
+
+          <svg>
+            <defs>
+              <filter id="f1" x="0" y="0" width="150%" height="150%">
+                <feOffset result="offOut" in="SourceGraphic" dx="2.5" dy="2.5" />
+                <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2" />
+                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+              </filter>
+            </defs>
+          </svg>
+
+          <!--          <div class="storyControls">
+            <g class="storyControls-G">
+              <img class="controlButton active set1 set0 pause" src="image/pause.svg">
+              <img class="controlButton active set1 set0 play" src="image/play.svg">
+              <img class="controlButton active set0 stepBack" src="image/stepBack.svg">
+              <img class="controlButton active set0 stepForward" src="image/stepForward.svg">
+              <img class="controlButton active replay" src="image/replay.svg">
+              <img class="controlButton active set0 closeStory" src="image/closeStory.svg">
+            </g>
+          </div> -->
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer fullWidthBlack mt-auto py-3">
+
+
+    <div class="container" id="rights">
+      <!-- <span class="text-muted">Place sticky footer content here.</span> -->
+      <!-- <span>© Aleph Insights Limited · <a href="/privacy-policy">Privacy Policy</a></span> -->
+
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <!--   <script src="../assets/dist/js/bootstrap.bundle.js"></script> -->
+  <script src="js/bootstrap.bundle.js"></script>
+  <script type="text/javascript" src="js/jQuery-v3.4.1.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+  <script type="text/javascript" src="https://d3js.org/queue.v1.min.js"></script>
+  <script type="text/javascript" src="js/useful_full.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</html>
